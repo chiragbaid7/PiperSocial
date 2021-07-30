@@ -18,6 +18,7 @@ const mycomments = require("./api/mycomments");
 const mylikes = require("./api/mylikes");
 const posts = require("./api/posts");
 const follower = require("./api/follower");
+
 app.use(
   cors({
     origin: "https://pipersocial.netlify.app",
@@ -26,6 +27,7 @@ app.use(
     credentials: true,
   })
 );
+
 const verifytoken = async (req, res, next) => {
   try {
     if (req.headers.authorization) {
