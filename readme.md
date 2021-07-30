@@ -5,7 +5,7 @@ https://pipersocial.netlify.app/
 1. Designed an ER diagram using lucid chart
 
 2.Created tables and relationships + participation constraints with SQL as a Relational Database
-![](server/PiperSocial.png)
+![](server/Piper.png)
 3. Authentication using JWT TOKEN  
    [✔] SIGN IN
    [✔] LOGIN
