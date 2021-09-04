@@ -6,6 +6,7 @@ let ReadableStream = require("stream").Readable;
 exports.get_all_my_posts = async (req, res, next) => {
   try {
     /*
+    sample code to send images through streams
     const data = await getobject("Screenshot (277).png");
     
     let stream = new ReadableStream();
