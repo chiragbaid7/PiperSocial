@@ -2,24 +2,22 @@
 https://pipersocial.netlify.app/
 ## PROJECT FLOW
 
-1. Designed an ER diagram using lucid chart
+1.Designed Database Schema using lucid chart
 
 2.Created tables and relationships + participation constraints with SQL as a Relational Database
 ![](server/Piper.png)
 3. Authentication using JWT TOKEN  
-   [✔] SIGN IN
-   [✔] LOGIN
+4. 
+5. VALIDATIONS + ALL STATUS CODE
 
-4. VALIDATIONS + ALL STATUS CODE
+6.Multer for parsing multiform data
 
-5.Multer for parsing multiform data
-
-6.Storage AWS S3 Buckets for storing images 
+7.Storage AWS S3 Buckets for storing images 
 
 # REST API
-7.me is used in the endpoints to indicate current_user of the app
+8.me is used in the endpoints to indicate current_user of the app
 
-8.users indicates existing users of the PiperSocial    
+9.users indicates existing users of the PiperSocial    
 
        [✔] GET all users of the application                GET       http:://api/users
 
