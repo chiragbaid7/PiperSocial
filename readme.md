@@ -6,9 +6,9 @@ https://pipersocial.netlify.app/
 
 2.Created tables and relationships + participation constraints with SQL as a Relational Database
 ![](server/Piper.png)
-3. Authentication using JWT TOKEN  
+3.Authentication using JWT TOKEN  
 
-5. VALIDATIONS + ALL STATUS CODE
+5.VALIDATIONS + ALL STATUS CODE
 
 6.Multer for parsing multiform data
 
