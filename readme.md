@@ -15,52 +15,51 @@ https://pipersocial.netlify.app/
 7.Storage AWS S3 Buckets for storing images 
 
 # REST API
-8.me is used in the endpoints to indicate current_user of the app
 
-9.users indicates existing users of the PiperSocial    
+8.users indicates existing users of the PiperSocial    
 
-       [✔] GET all users of the application                GET       http:://api/users
+       [x] GET all users of the application                GET       http:://api/users
 
-    ## [✔] POSTS API
+    ## [x] POSTS API
 
-        [✔] Authorization Header
+        [x] Authorization Header
 
-        [✔] get a list of current user's posts             GET      http:://api/me/posts
+        [x] get a list of current user's posts             GET      http:://api/me/posts
 
-        [✔] get a particular post                          GET      http:://api/posts/{post_id}
+        [x] get a particular post                          GET      http:://api/posts/{post_id}
 
-        [✔] get all my friends posts                       GET      http:://api/me/posts/follow
+        [x] get all my friends posts                       GET      http:://api/me/posts/follow
 
-        [✔] create a post                                  POST     http:://api/me/posts
+        [x] create a post                                  POST     http:://api/me/posts
 
-        [✔] delete a post                                  DELETE   http:://api/me/posts/{post_id}
+        [x] delete a post                                  DELETE   http:://api/me/posts/{post_id}
 
-        [✔] get a list of user's posts                     GET      http:://api/users/{user_id}/posts
+        [x] get a list of user's posts                     GET      http:://api/users/{user_id}/posts
 
 
-    ## [✔] COMMENT API
+    ## [x] COMMENT API
 
-        [✔] get all comments on a post                     GET      http:://api/posts/{post_id}/comments
+        [x] get all comments on a post                     GET      http:://api/posts/{post_id}/comments
 
-        [✔] create a comment on a post                     POST     http:://api/me/posts/{post_id}/comments
+        [x] create a comment on a post                     POST     http:://api/me/posts/{post_id}/comments
 
-        [✔] delete a comment of a post                     DELETE   http:://api/me/comments/{comment_id}
+        [x] delete a comment of a post                     DELETE   http:://api/me/comments/{comment_id}
 
-    ## [✔] LIKES API
+    ## [x] LIKES API
 
-        [✔] like  a post                                   PUT      http:://api/me/posts/{post_id}/likes
+        [x] like  a post                                   PUT      http:://api/me/posts/{post_id}/likes
 
-        [✔] unlike a post                                  DELETE   http:://api/me/posts/{posts_id}/likes
+        [x] unlike a post                                  DELETE   http:://api/me/posts/{posts_id}/likes
 
-        [✔] Liking users(users who have liked the post)    GET      http:://api/posts/{post_id}/likes
+        [x] Liking users(users who have liked the post)    GET      http:://api/posts/{post_id}/likes
 
-    #[✔] FOLLOW API
+    ## [x] FOLLOW API
 
-        [✔] follow a user                                  PUT      http:://api/me/users/{user_id}/follow
+        [x] follow a user                                  PUT      http:://api/me/users/{user_id}/follow
 
-        [✔] unfollow a user                                DELETE   http:://api/me/users/{user_id}/follow
+        [x] unfollow a user                                DELETE   http:://api/me/users/{user_id}/follow
 
-        [✔] get all users I follow                         GET      http:://api/me/users/follow
+        [x] get all users I follow                         GET      http:://api/me/users/follow
 
 
 
