@@ -22,17 +22,17 @@ https://pipersocial.netlify.app/
 
     ## [x] POSTS API
 
-    - [x] get a list of current user's posts             GET      http:://api/me/posts
+      [x] get a list of current user's posts             GET      http:://api/me/posts
 
-    - [x] get a particular post                          GET      http:://api/posts/{post_id}
+      [x] get a particular post                          GET      http:://api/posts/{post_id}
 
-    - [x] get all my friends posts                       GET      http:://api/me/posts/follow
+      [x] get all my friends posts                       GET      http:://api/me/posts/follow
 
-    - [x] create a post                                  POST     http:://api/me/posts
+      [x] create a post                                  POST     http:://api/me/posts
 
-    - [x] delete a post                                  DELETE   http:://api/me/posts/{post_id}
+      [x] delete a post                                  DELETE   http:://api/me/posts/{post_id}
 
-    - [x] get a list of user's posts                     GET      http:://api/users/{user_id}/posts
+      [x] get a list of user's posts                     GET      http:://api/users/{user_id}/posts
 
 
     ## [x] COMMENT API
