@@ -20,9 +20,7 @@ https://pipersocial.netlify.app/
 
 - [x] GET all users of the application                GET       http:://api/users
 
-- [x] POSTS API
-
-    - [x] Authorization Header
+    ## - [x] POSTS API
 
     - [x] get a list of current user's posts             GET      http:://api/me/posts
 
