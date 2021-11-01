@@ -18,7 +18,7 @@ https://pipersocial.netlify.app/
 
 8.users indicates existing users of the PiperSocial    
 
-       [x] GET all users of the application                GET       http:://api/users
+       [X] GET all users of the application                GET       http:://api/users
 
     ## [x] POSTS API
 
