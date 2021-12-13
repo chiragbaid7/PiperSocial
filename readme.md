@@ -21,7 +21,6 @@ https://pipersocial.netlify.app/
 
 # REST API
 
-8.users indicates existing users of the PiperSocial    
 
     [x] GET all users of the application                GET       http:://api/users
 
