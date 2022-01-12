@@ -108,7 +108,7 @@ https://user-images.githubusercontent.com/37933427/145869384-7678b5bb-4dc3-41e7-
 
      get a particular post                          GET      http:://api/v1/users/posts/{post_id}
 
-     get current user's friends posts                       GET      http:://api/v1/users/posts/following
+     get current user's friends posts               GET      http:://api/v1/users/posts/following
 
      create a post                                  POST     http:://api/v1/users/posts
 
