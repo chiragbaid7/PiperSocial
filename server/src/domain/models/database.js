@@ -1,18 +1,19 @@
-const mysql2 = require("mysql2");
+const mysql2 = require("mysql2/promise");
 //create a pool
 
-const path = require("path");
-require("dotenv").config({ path: path.join(__dirname, "../../", ".env") });
+
+const {development} = require('../../config/config');
 
 const pool = mysql2.createPool({
-  host: process.env.HOST,
-  user: process.env.USER,
-  password: process.env.PASSWORD,
-  database: process.env.DATABASE,
+  host: development.host,
+  user: development.username,
+  password: development.password,
+  database: development.database,
   connectionLimit: 32,
   waitForConnections: true,
   queueLimit: 0,
 });
+
 // wrap a promise instance on that pool
 //1.create a user table
 
@@ -30,7 +31,6 @@ pool.execute(`CREATE TABLE IF NOT EXISTS users(
 pool.execute(`CREATE TABLE IF NOT EXISTS posts(
     post_id INT AUTO_INCREMENT,
     user_id INT NOT NULL,
-    name varchar(45) NOT NULL,
     post longtext NOT NULL,
     created_at TIMESTAMP  DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(post_id),
@@ -44,7 +44,6 @@ pool.execute(`CREATE TABLE IF NOT EXISTS comments(
   comment_id INT AUTO_INCREMENT ,
   post_id INT NOT NULL,
   user_id INT NOT NULL ,
-  name varchar(45) NOT NULL,
   comment longtext NOT NULL,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY(comment_id),
@@ -59,7 +58,6 @@ pool.execute(`CREATE TABLE IF NOT EXISTS likes(
   like_id INT AUTO_INCREMENT ,
   user_id INT,
   post_id INT,
-  name varchar(45) NOT NULL,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY(like_id),
   FOREIGN KEY(user_id) REFERENCES users(user_id),
@@ -80,4 +78,4 @@ pool.execute(`CREATE TABLE IF NOT EXISTS followers(
     ENGINE=INNODB
 `);
 
-module.exports = pool.promise();
+module.exports = pool;
