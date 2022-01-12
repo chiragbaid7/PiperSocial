@@ -28,12 +28,14 @@ https://user-images.githubusercontent.com/37933427/145869384-7678b5bb-4dc3-41e7-
 |   |          ├── postsHandler.js
 |   |          ├── userHandler.js
 |   |          └── followHandler.js         
-|   ├── domain / database
+|   ├── domain
 │   │   ├── models
-|   |   |   ├── index.js
-|   |   |   ├── followModel.js
-│   │   |   ├── postsModel.js
-|   |   |   └── userModel.js
+|   |   |   ├── sequilze
+|   |   |   │   ├── index.js
+|   |   |   │   ├── followModel.js
+│   │   |   │   ├── postsModel.js
+|   |   |   │   └── userModel.js
+|   |   |   └── database.js
 │   │   └── data-access / repository
 |   |       ├── userData.js
 |   |       ├── followData.js
