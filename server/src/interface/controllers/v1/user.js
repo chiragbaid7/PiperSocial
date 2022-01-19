@@ -14,7 +14,6 @@ exports.createUser = async(req,res,next) =>{
 
 exports.getUser = async(req,res,next) =>{
     try {
-        console.log("hi");
         const {email,password} = req.body;
         const response = await UserService.getUser(email,password)
         sendJWTResponse(res, response)
